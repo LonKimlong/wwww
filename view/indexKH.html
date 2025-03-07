@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Javascript</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="../css/styleKH.css" />
+  </head>
+  <body>
+    <div class="show-popup">
+      <button id="btn-show" onclick="showpopup()">បង្ហាញ</button>
+      <button id="btn-swict" onclick="swictpopup()">English</button>
+    </div>
+    <div id="container">
+      <h1>បញ្ចូលព័ត៍មានរបស់អ្នកប្រើប្រាស់</h1>
+      <div id="input-container">
+        <label for="name-input">ឈ្មេាះ:</label>
+        <input
+          type="text"
+          id="name-input"
+          placeholder="សូមបញ្ចូលឈ្មោះ"
+          required
+        />
+        <label for="email-input">អុីមែល:</label>
+        <input
+          type="email"
+          id="email-input"
+          placeholder="សូមបញ្ចូលអាស័យដ្ឋាន"
+          required
+        />
+        <button id="add-btn">បញ្ចូ​ល</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>លេខរៀង</th>
+            <th>ឈ្មោះ</th>
+            <th>អាស័យដ្ឋាន</th>
+            <th>សកម្មភាព</th>
+          </tr>
+        </thead>
+        <!-- insert values -->
+        <tbody id="table-body">
+          <!-- <tr>
+            <td>001</td>
+            <td>Lon Kimlong</td>
+            <td>longzer123@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Sergio Ramos</td>
+            <td>ramos234@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Cristano Ronaldo</td>
+            <td>ronaldo777@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+      <div id="update-container">
+        <input
+          type="text"
+          id="update-name-inpute"
+          placeholder="សូមបញ្ចូលឈ្មោះ"
+          required
+        />
+        <input
+          type="email"
+          id="update-email-input"
+          placeholder="សូមបញ្ចូលអាស័យដ្ឋាន"
+          required
+        />
+        <button id="update-btn">យល់ព្រម</button>
+        <button id="cancel-btn">បេាះបង់</button>
+      </div>
+    </div>
+    <script src="../js/mainKH.js"></script>
+  </body>
+</html>

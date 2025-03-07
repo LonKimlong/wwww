@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Javascript</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="../css/styleEng.css" />
+  </head>
+  <body>
+    <div class="show-popup">
+      <button id="btn-show" onclick="showpopup()">show</button>
+      <button id="btn-swict" onclick="swictpopup()">ភាសាខ្មែរ</button>
+    </div>
+    <div id="container">
+      <h1>Imformation User</h1>
+      <div id="input-container">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" placeholder="Input name" required />
+        <label for="email-input">Email:</label>
+        <input
+          type="email"
+          id="email-input"
+          placeholder="Input email"
+          required
+        />
+        <button id="add-btn">Add</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <!-- insert values -->
+        <tbody id="table-body">
+        </tbody>
+      </table>
+      <div id="update-container">
+        <input
+          type="text"
+          id="update-name-inpute"
+          placeholder="Input your name"
+          required
+        />
+        <input
+          type="email"
+          id="update-email-input"
+          placeholder="Input your email"
+          required
+        />
+        <button id="update-btn">update</button>
+        <button id="cancel-btn">cancel</button>
+      </div>
+    </div>
+    <script src="../js/mainEng.js"></script>
+  </body>
+</html>

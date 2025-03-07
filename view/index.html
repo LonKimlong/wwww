@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Javascript</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Input user Information</h1>
+      <div id="input-container">
+        <label for="name-input">Name:</label>
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email-input">Email:</label>
+        <input
+          type="email"
+          id="email-input"
+          placeholder="Enter your email"
+          required
+        />
+        <button id="add-btn">Add</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <!-- insert values -->
+        <tbody id="table-body">
+          <!-- <tr>
+            <td>001</td>
+            <td>Lon Kimlong</td>
+            <td>longzer123@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Sergio Ramos</td>
+            <td>ramos234@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Cristano Ronaldo</td>
+            <td>ronaldo777@gmail.com</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+      <div id="update-container">
+        <input
+          type="text"
+          id="update-name-inpute"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          id="update-email-input"
+          placeholder="Enter your email"
+          required
+        />
+        <button id="update-btn">Update</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

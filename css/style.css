@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#container {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "krosa";
+  src: url("../fonts/KRASAR-REGULAR.OTF");
+}
+h1 {
+  color: darkgreen;
+  font-family: "krosa";
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+#input-container {
+  margin-bottom: 20px;
+  margin-right: 62px;
+}
+input {
+  padding: 6px 23px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 18px;
+  margin-right: 10px;
+}
+input:focus {
+  border-color: blue;
+  outline: 0;
+}
+label {
+  font-family: "krosa";
+}
+button {
+  padding: 8px 20px;
+  border: none;
+  background-color: green;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "krosa";
+}
+button:hover {
+  background-color: brown;
+}
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+th,
+td {
+  text-align: left;
+  padding-left: 37px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-family: "krosa";
+  border-bottom: 2px solid gray;
+}
+td {
+  text-align: left;
+  background-color: rgb(235, 239, 235);
+  color: rgb(11, 2, 2);
+}
+#update-container {
+  display: none;
+  margin-top: 40px;
+  margin-right: 65px;
+}
+#add-btn {
+  padding: 8px 20px;
+  font-size: 13px;
+}
+#update-btn {
+  background-color: blue;
+  padding: 7px 7px;
+}
+#cancel-btn {
+  background-color: red;
+  padding: 7px 7px;
+}
+#update-btn:hover {
+  background-color: rgb(129, 92, 231);
+  color: black;
+}
+#cancel-btn:hover {
+  background-color: rgb(220, 106, 106);
+  color: black;
+}
+.edit-btn {
+  background-color: blue;
+  padding: 7px 17px;
+}
+.delete-btn {
+  background-color: red;
+  padding: 7px 8px;
+  margin-left: 10px;
+}
